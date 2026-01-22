@@ -1,0 +1,19 @@
+<h2>Personajes de Harry Potter</h2>
+
+<div *ngFor="let personaje of personajes" class="card">
+  <h3>{{ personaje.name }}</h3>
+
+  <p><strong>Casa:</strong> {{ personaje.house || 'Sin casa' }}</p>
+
+  <p>
+    <strong>Género:</strong>
+    {{ obtenerGenero(personaje.gender) }}
+  </p>
+
+  <img
+    *ngIf="personaje.image"
+    [src]="personaje.image"
+    alt="{{ personaje.name }}"
+    width="120"
+  >
+</div>
