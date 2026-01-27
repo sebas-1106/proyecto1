@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private apiUrl = 'https://hp-api.onrender.com/api/characters'; // ejemplo
+  public apiUrl = ''; // ejemplo
 
   constructor(private http: HttpClient) {}
 

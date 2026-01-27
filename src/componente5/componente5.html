@@ -6,4 +6,5 @@
     <li *ngFor="let a of alumnos">{{ a }}</li>
 </ul>
 
-<app-componente6 [valor="alumnos.length"]></app-componente6>
+
+<app-componente6 [valor]="alumnos.length" (notificar)="accionPadre($event)"></app-componente6>

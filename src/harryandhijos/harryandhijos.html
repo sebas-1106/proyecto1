@@ -1,4 +1,4 @@
-<!-- <div [ngClass]="{ perfil_chico: chico(per), perfil_chica: chica(per) }" *ngFor="let per of datos"> -->
+<button (click)="contarElementos()">Contar</button>
 <div [ngClass]="perfil(per)" *ngFor="let per of datos">
   <img
     [src]="per.image"
@@ -9,3 +9,5 @@
   <span *ngIf="chico(per)" class="perfil__nombre">chico</span>
   <span *ngIf="chica(per)" class="perfil__nombre">chica</span>
 </div>
+
+<app-harryandhijos [datos]="datos"></app-harryandhijos>

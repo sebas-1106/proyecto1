@@ -5,4 +5,13 @@
 <button (click)="mensaje()">Mensaje</button>
 
 <input type="text" id="nombre" [(ngModel)]="nombre"/>
+
+<h2>Alumnos</h2>
+<button (click)="mostrar = !mostrar">
+Mostrar / Ocultar alumnos
+</button>
+<p *ngIf="mostrar">Listado de alumnos</p>
+<ul *ngIf="mostrar">
+<li *ngFor="let a of alumnos">{{ a }}</li>
+</ul>
 <app-componente1></app-componente1>

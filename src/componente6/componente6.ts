@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-componente6',
   imports: [],
@@ -7,9 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrl: './componente6.scss',
 })
 export class Componente6 {
-@Input() valor!: number;
+  @Input() valor!: number;
+  @Output() notificar = new EventEmitter<string>();
+  ngOnInit() {
 
-ngOnInit(){
-  
-}
+  }
+  avisar() {
+    this.notificar.emit(' pepino');
+  }
 }
