@@ -1,0 +1,38 @@
+.personaje_peli {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffe81f; /* amarillo Star Wars 😏 */
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+}
+
+.texto_peli {
+    display: block;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+/* contenedor de cada peli */
+.personaje_peli + div,
+.personaje_peli ~ div {
+    background-color: #1c1c1c;
+    padding: 10px 15px;
+    border-left: 3px solid #ffe81f;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* título de la peli (primer span dentro del div) */
+.texto_peli:first-child {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* opening crawl */
+.texto_peli:last-child {
+    font-style: italic;
+    opacity: 0.85;
+}

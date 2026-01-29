@@ -10,7 +10,8 @@ import { Componente5 } from '../componente5/componente5';
 import { HarrypotterComponent } from '../harrypotter/harrypotter.component';
 import { Harryandhijos } from '../harryandhijos/harryandhijos';
 import { Yosoytupadre } from '../yosoytupadre/yosoytupadre';
-
+import { Lukeskywalker } from '../lukeskywalker/lukeskywalker';
+import { Starwars } from '../starwars/starwars';
 export const routes: Routes = [
     { path: '', component: Componente1 },
     { path: 'componente1', component: Componente1 },
@@ -23,4 +24,7 @@ export const routes: Routes = [
     { path: 'harrypotter', component: HarrypotterComponent },
     { path: 'harryandhijos', component: Harryandhijos },
     { path: 'yosoytupadre', component: Yosoytupadre },
+    { path: 'lukeskywalker', component: Lukeskywalker},
+    { path: 'starwars', component: Starwars},
+    
 ];

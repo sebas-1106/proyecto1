@@ -1,1 +1,7 @@
-<p>lukeskywalker works!</p>
+<div *ngFor="let per of arrPersonajes">
+    <span class="personaje_nave">{{per.nombre}}</span>
+    <div *ngFor="let nav of per.naves">
+        <span class="texto_nave">{{nav.name}}</span>
+        <span class="texto_nave">{{nav.model}}</span>
+    </div>
+</div>

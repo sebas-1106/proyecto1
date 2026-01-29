@@ -1,0 +1,38 @@
+.personaje_nave {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4fc3f7; /* azul espacial */
+    margin: 22px 0 12px;
+    letter-spacing: 1px;
+}
+
+.texto_nave {
+    display: block;
+    font-size: 0.95rem;
+    color: #dcdcdc;
+    margin: 3px 0;
+}
+
+/* contenedor de cada nave */
+.personaje_nave + div,
+.personaje_nave ~ div {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #333;
+}
+
+/* nombre de la nave */
+.texto_nave:first-child {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* modelo de la nave */
+.texto_nave:last-child {
+    font-size: 0.85rem;
+    color: #9fdcff;
+    opacity: 0.85;
+}

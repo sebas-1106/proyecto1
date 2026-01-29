@@ -1,1 +1,10 @@
-<p>starwars works!</p>
+<h1>STAR WARS RULES</h1>
+<app-lukeskywalker [datos]="resultados" (enviarPersonajes)="cargaNaves($event)" ></app-lukeskywalker>
+
+<div *ngFor="let per of arrPersonajes">
+    <span class="personaje_peli">{{per.nombre}}</span>
+    <div *ngFor="let peli of per.pelis">
+        <span class="texto_peli">{{peli.title}}</span>
+        <span class="texto_peli">{{peli.opening_crawl}}</span>
+    </div>
+</div>

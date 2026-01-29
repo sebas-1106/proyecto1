@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  public apiUrl = ''; // ejemplo
+  public apiUrl:string =''; // ejemplo
 
   constructor(private http: HttpClient) {}
 
