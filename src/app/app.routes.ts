@@ -12,9 +12,11 @@ import { Harryandhijos } from '../harryandhijos/harryandhijos';
 import { Yosoytupadre } from '../yosoytupadre/yosoytupadre';
 import { Lukeskywalker } from '../lukeskywalker/lukeskywalker';
 import { Starwars } from '../starwars/starwars';
+import { AngForm } from '../ang-form/ang-form';
 export const routes: Routes = [
     { path: '', component: Componente1 },
     { path: 'componente1', component: Componente1 },
+    { path: 'AngForm', component: AngForm },
     { path: 'componente2', component: Componente2 },
     { path: 'componente3', component: Componente3 },
     { path: 'componente4', component: Componente4 },
@@ -26,5 +28,5 @@ export const routes: Routes = [
     { path: 'yosoytupadre', component: Yosoytupadre },
     { path: 'lukeskywalker', component: Lukeskywalker},
     { path: 'starwars', component: Starwars},
-    
+
 ];
