@@ -28,5 +28,9 @@ export const routes: Routes = [
     { path: 'yosoytupadre', component: Yosoytupadre },
     { path: 'lukeskywalker', component: Lukeskywalker},
     { path: 'starwars', component: Starwars},
+    { path: 'ejerstarwars', loadComponent: () => import('../ejer-starwars/ejer-starwars').then(m=>m.EjerStarwars)},
+    { path: 'ejerPokemon', loadComponent: () => import('../ejer-pokemon/ejer-pokemon').then(m=>m.EjerPokemon)},
+    { path:'rejilla',loadComponent:()=> import ('../rejillas/rejillas').then(x=>x.Rejilla)},
+    { path:'rejillaPokemon',loadComponent:()=> import ('../rejillas-pokemon/rejillas-pokemon').then(x=>x.RejillasPokemon)},
 
 ];
